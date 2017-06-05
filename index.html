@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title> victim's webpage </title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+form { 
+margin: 0 auto; 
+
+width:270px;
+
+}
+.st{
+border: 2px solid gray;
+    border-radius: 12px;
+	margin: 0 auto; 
+
+width:290px;
+
+}
+</style>
+<h1 style='color:blue;' align='center'>This is Victim's page</h1>
+<div class='st' >
+<form action="transfer.php" method='post' style='border:'>
+<h3 style='color:red;'>TRANSFER MONEY </h3>
+<p style='color:green;'>Fill the Account number and Amount </p>
+    <div class="form-group">
+      <label > Account NO:</label>
+      <input type="text" class="form-control"   name="account">
+    </div>
+    <div class="form-group">
+      <label> Amount:</label>
+      <input type="text" class="form-control"  name="amount">
+    </div>
+    <input type='submit' style='float:right;' type="submit" class="btn btn-primary" value='Submit'/>
+  </form>
+  </div>
+</body>
