@@ -1,6 +1,6 @@
 <?php
-session_start();
-require_once('Token.php');
+//session_start();
+//require_once('Token.php');
 if($_SERVER['REQUEST_METHOD']='POST'){
 if(isset($_POST['account'],$_POST['amount'])){
 $acc=$_POST['account'];
