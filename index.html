@@ -28,7 +28,6 @@
   transform: translate(-50%, -50%);
 }  
   p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
   .bg-1 { 
      margin-top:30px;
     background-color: #1abc9c; /* Green */
@@ -51,7 +50,7 @@
     padding-bottom: 50px;
   }
   .navbar {
-    padding-top: 15px;
+    padding-top:0;
     padding-bottom: 1px;
     border: 0;
     border-radius: 0;
@@ -67,7 +66,9 @@
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
+  top:15px;
+  right:10px;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
@@ -106,7 +107,7 @@
 
 
 .sidenav{background-color:#111;height:98%;left:0;overflow-x:hidden;padding-top:60px;position:fixed;top:0;transition:.5s;width:0;z-index:2;}
-.sidenavR{background-color:#111;height:98%;overflow-x:hidden;padding-top:60px;  position:fixed;right:0;top:0;transition:.5s;width:0;z-index:2;}
+.sidenavR{background-color:#111;height:98%;overflow-x:hidden;padding-top:60px;  position:fixed;right:0;top:0;transition:.5s;width:0;z-index:100;}
 .sidenav a,.sidenavR a{color:#818181;display:block;font-size:25px;padding:8px 8px 8px 32px;text-decoration:none;transition:.3s;}
 .sidenav a:hover,.offcanvas a:focus,.sidenavR a:hover,.offcanvas a:focus{color:#f1f1f1;}
 .sidenav .closebtn,.sidenavR .closebtn{font-size:36px;margin-left:50px;position:absolute;right:25px;top:0;}
