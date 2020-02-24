@@ -54,6 +54,35 @@
   .navbar-nav  li a:hover {
     color: #1abc9c !important;
   }
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top:15px;
+  right:10px;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd; 
+}
+
+.show {
+  display: block;
+}
+
+
   </style>
 </head>
 <body>
@@ -72,7 +101,7 @@
       <img src="logo.png" class="img-responsive margin" style="position: absolute;margin-left:-40px;margin-top:-20px;" width="80" height="80" alt="Image">
       </a></p>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar" style="position: absolute; padding-left:100px;z-index:1;">
+    <div class="collapse navbar-collapse dropdown-content" id="myNavbar" style="margin-top:67px;">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
@@ -148,17 +177,21 @@
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>My Activities</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Lead Graduate Teaching Assistant</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MAY 2018 - DEC 2018</h6>
-          <p>Graduate Teaching Assistant for Python course</p>
+           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JAN 2018 - PRESENT</h6>
+          <p>Graduate Teaching Assistant for Advanced Numerical Methods in Engineering</p>
+           <h6 class="w3-text-teal"><i class=" fa-fw w3-margin-left"></i>Instructor: <a href="https://www.iitgn.ac.in/faculty/maths/fac-mohan"> Mohan Joshi</a></h6> 
           <ol>
-            <p>&#8226; Assisted head faculty member with classroom instruction material, exams, and record keeping.</p>
+            <p>&#8226; Conducted Lab sessions, an interactive tutorial, and Cody coursework to give students hands-on experience with MATLAB </p>
+            <p>&#8226; Assisted Prof. Joshi with classroom instruction material, exams, and record keeping.</p>
             <p>&#8226; Lead, supervised, and planned undergraduate laboratory experience.</p>
             <p>&#8226; Corresponded daily with students through inter-campus communication via email and Blackboard.</p>
             <p>&#8226; Guided the development and training of the new graduate assistants.</p>
           </ol>
           <hr>
+
            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>JULY 2019 - AUG 2019</h6>
           <p>Graduate Teaching Assistant for Foundation Programme 2019 at IIT Gandhinagar</p>
+            <h6 class="w3-text-teal"><i class=" fa-fw w3-margin-left"></i>Instructors: <a href="https://www.iitgn.ac.in/faculty/cse/mayank">Mayank Singh</a>, <a href="https://www.iitgn.ac.in/faculty/civil/fac-udit">Udit Bhatia</a>,  <a href="https://www.iitgn.ac.in/faculty/design/mansi">Manasi Kanetkar</a>,  <a href="https://www.iitgn.ac.in/faculty/hss/fac-ambika">Ambika Aiyadurai</a>, <a href="https://www.iitgn.ac.in/faculty/phy/fac-prasanna">Prasanna Venkatesh B</a></h6> 
           <ol>
             <p>&#8226; Assisted visited faculty members with classroom instructions, room allocation, equipment, and attendance record.</p>
             <p>&#8226; Motivated and encouraged students to participate in events actively.</p>
@@ -166,6 +199,20 @@
             <p>&#8226; Helped students with outdoor events, trips, and activities.</p>
           </ol>
           <hr>
+
+
+
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>MAY 2018 - DEC 2018</h6>
+          <p>Graduate Teaching Assistant for Python course</p>
+          <h6 class="w3-text-teal"><i class=" fa-fw w3-margin-left"></i>Instructor: <a href="https://www.iitgn.ac.in/faculty/cse/krishna">Krishna Prasad Miyapuram</a></h6> 
+          <ol>
+            <p>&#8226; Assisted head faculty member with classroom instruction material, exams, and record keeping.</p>
+            <p>&#8226; Lead, supervised, and planned undergraduate laboratory experience.</p>
+            <p>&#8226; Corresponded daily with students through inter-campus communication via email and Blackboard.</p>
+            <p>&#8226; Guided the development and training of the new graduate assistants.</p>
+          </ol>
+          <hr>
+          
           
           
         </div>
@@ -174,9 +221,9 @@
        <div class="w3-container">
           <h5 class="w3-opacity"><b>Research interests</b></h5>
           
-          <p>Artificial Intelligence, Machine Learning, and Deep Learning</p>
+          <p>Medical Imaging, Machine Learning, and Deep Learning</p>
           <ol>
-            <p>I am currently working on my thesis, entitled “Multiclass Classification of Alzheimer’s disease using Deep CNN on MRI”</p>
+            <p>I am currently working on my thesis, entitled “Towards Earlier Detection of Alzheimer’s Disease and Developing Deep Learning Architecture for Classification of Alzheimer’s Disease using MR Images”</p>
          </ol>
           <hr>
         </div>
