@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Projects — Kushpal Singh Yadav</title>
-<meta name="description" content="Deep learning for medical imaging, message classification, swarm optimisation and systems work in C — projects by Kushpal Singh Yadav.">
+<meta name="description" content="Trend intelligence on GCP, a school ERP platform handling 100K payments a month, deep learning for medical imaging, and systems work in C — projects by Kushpal Singh Yadav.">
 <link rel="canonical" href="https://kushpal.github.io/projects.html">
 <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0c0e11" media="(prefers-color-scheme: dark)">
@@ -12,7 +12,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Projects — Kushpal Singh Yadav">
-<meta property="og:description" content="Deep learning for medical imaging, message classification, swarm optimisation and systems work in C.">
+<meta property="og:description" content="Trend intelligence on GCP, a school ERP platform, deep learning for medical imaging, and systems work in C.">
 <meta property="og:url" content="https://kushpal.github.io/projects.html">
 <meta property="og:image" content="https://kushpal.github.io/new_cv.jpg">
 
@@ -55,13 +55,90 @@
     <p class="eyebrow">Projects</p>
     <h1>Selected work</h1>
     <p class="lede">
-      Research from IIT Gandhinagar, engineering from the years since, and a few things built
-      because the problem was interesting. Most of the code is public.
+      Production backend work from the last five years, research from IIT Gandhinagar before it,
+      and a few things built because the problem was interesting.
     </p>
   </section>
 
   <section class="wrap section">
     <div class="grid">
+
+      <!-- TrendSense -->
+      <article class="card">
+        <div class="card__media card__media--art">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Illustration of social data sources feeding a rising trend chart">
+            <g class="art-line" stroke-width="1.8" opacity=".7">
+              <rect x="22" y="36" width="26" height="26" rx="7"/>
+              <rect x="22" y="77" width="26" height="26" rx="7"/>
+              <rect x="22" y="118" width="26" height="26" rx="7"/>
+            </g>
+            <path class="art-line" d="M52 49h20M52 90h20M52 131h20" stroke-width="1.6" opacity=".4" stroke-dasharray="3 5"/>
+            <path class="art-rule" d="M86 28v122h202" stroke-width="1.6"/>
+            <g class="art-track">
+              <rect x="100" y="118" width="14" height="32" rx="4"/>
+              <rect x="126" y="106" width="14" height="44" rx="4"/>
+              <rect x="152" y="112" width="14" height="38" rx="4"/>
+              <rect x="178" y="88" width="14" height="62" rx="4"/>
+              <rect x="204" y="94" width="14" height="56" rx="4"/>
+              <rect x="230" y="64" width="14" height="86" rx="4"/>
+              <rect x="256" y="46" width="14" height="104" rx="4"/>
+            </g>
+            <path class="art-line" d="M107 116c22-6 34 0 52-4s24-24 44-26 32-26 60-42" stroke-width="2.6"/>
+            <circle class="art-fill" cx="263" cy="44" r="4.5"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>TrendSense</h3>
+          <p>
+            A platform that collects global trends from TikTok, YouTube and Instagram through Apify
+            and public data sources, then uses Gemini to turn the raw signal into structured insight
+            for clients in beauty, cosmetics and travel. I built the backend services in Python and
+            Node.js plus a data migration tool &mdash; 15% faster backend &mdash; and deployed the
+            GraphQL and FastAPI microservices on Google Cloud Run behind CI/CD.
+          </p>
+          <ul class="tags">
+            <li class="tag tag--accent">Current work</li>
+            <li class="tag">Gemini</li>
+            <li class="tag">FastAPI &amp; GraphQL</li>
+            <li class="tag">Cloud Run</li>
+            <li class="tag">quilt.ai</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- School ERP -->
+      <article class="card">
+        <div class="card__media card__media--art">
+          <svg viewBox="0 0 320 180" role="img" aria-label="Illustration of a payment routed through a gateway into ledger rows">
+            <rect class="art-line" x="24" y="56" width="82" height="54" rx="9" stroke-width="2"/>
+            <rect class="art-fill" x="24" y="70" width="82" height="10" opacity=".5"/>
+            <rect class="art-fill" x="34" y="90" width="28" height="6" rx="3"/>
+            <path class="art-line" d="M110 83h24" stroke-width="1.8" opacity=".5" stroke-dasharray="4 5"/>
+            <path class="art-line" d="M158 61l24 22-24 22-24-22z" stroke-width="2"/>
+            <circle class="art-fill" cx="158" cy="83" r="4"/>
+            <path class="art-line" d="M184 83h12l14-30h18M184 83h30M184 83h12l14 30h18" stroke-width="1.6" opacity=".45"/>
+            <rect class="art-fill" x="228" y="45" width="62" height="15" rx="7.5" opacity=".9"/>
+            <rect class="art-track" x="214" y="75" width="76" height="15" rx="7.5"/>
+            <rect class="art-fill" x="228" y="105" width="62" height="15" rx="7.5" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3>School ERP platform</h3>
+          <p>
+            A fee-payment REST API spanning multiple gateways, letting administrators monitor
+            transactions and reporting across more than 100K payments a month. I led the database
+            and API work &mdash; Django REST Framework, Google Cloud Storage, microservices &mdash;
+            and built 15+ custom modules with continuous integration across AWS Lambda and Google
+            Cloud Functions.
+          </p>
+          <ul class="tags">
+            <li class="tag">Django REST</li>
+            <li class="tag">Microservices</li>
+            <li class="tag">AWS &amp; GCP</li>
+            <li class="tag">2021&ndash;2024</li>
+          </ul>
+        </div>
+      </article>
 
       <!-- COVID-19 X-ray -->
       <article class="card">
@@ -119,14 +196,17 @@
         <div class="card__body">
           <h3><a class="stretch" href="https://github.com/kushpal/Master-Thesis" target="_blank" rel="noopener">Early detection of Alzheimer&rsquo;s disease</a></h3>
           <p>
-            My M.Tech thesis. A 2D convolutional neural network trained on magnetic resonance images
-            to separate cognitively normal subjects, mild cognitive impairment and Alzheimer&rsquo;s
-            disease — 99.8% accuracy across the three classes. Published in 2021.
+            My M.Tech thesis, published at Brain Informatics 2021. A 2D convolutional neural
+            network that classifies Alzheimer&rsquo;s disease from MR images, outperforming the
+            state of the art on accuracy, sensitivity and specificity across all three brain planes.
+            Built by preprocessing T1-weighted MRI volumes from the ADNI database into 94,536
+            sagittal, coronal and axial slices, then discarding the non-informative ones and
+            correcting for head movement and noise.
           </p>
           <ul class="tags">
             <li class="tag tag--accent">Published</li>
             <li class="tag">CNN</li>
-            <li class="tag">MRI</li>
+            <li class="tag">ADNI</li>
             <li class="tag">2019&ndash;2020</li>
           </ul>
         </div>
@@ -233,14 +313,15 @@
         <div class="card__body">
           <h3><a class="stretch" href="https://github.com/kushpal/Online-cloud-storage-system-using-C" target="_blank" rel="noopener">Online cloud storage system in C</a></h3>
           <p>
-            A client–server storage system written in C that handles multiple concurrent client
-            requests, keeps a per-user log file, and enforces that no user can read or write
-            another user&rsquo;s files.
+            A TCP-based, multi-client cloud storage system written in C, handling concurrent
+            requests with secure access control. The server keeps an individual log file per user
+            and enforces that nobody can read or write anyone else&rsquo;s files. Adapted into an
+            internal tool at Liftoff.
           </p>
           <ul class="tags">
             <li class="tag">C</li>
-            <li class="tag">Sockets</li>
-            <li class="tag">Systems</li>
+            <li class="tag">TCP sockets</li>
+            <li class="tag">Concurrency</li>
           </ul>
         </div>
       </article>
@@ -351,7 +432,7 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>&copy; <span data-year>2026</span> Kushpal Singh Yadav &middot; Bengaluru, India</p>
+    <p>&copy; <span data-year>2026</span> Kushpal Singh Yadav &middot; Bangalore, India</p>
     <ul class="social">
       <li><a href="https://github.com/kushpal" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.2 5.6 18.2 6 18.2 6c.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg></a></li>
       <li><a href="https://www.linkedin.com/in/kushpal-yadav-60762b169/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM10 9h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.6c0-1.34-.03-3.06-1.9-3.06-1.9 0-2.19 1.45-2.19 2.96V21h-4z"/></svg></a></li>
