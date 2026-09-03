@@ -626,23 +626,6 @@ hr {
 }
 .note p:last-child { margin-bottom: 0; }
 
-/* --- Resume viewer -------------------------------------------------------- */
-
-.pdf-frame {
-  width: 100%;
-  height: min(78vh, 1000px);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-}
-@media (max-width: 760px) {
-  .pdf-frame { display: none; }
-}
-.pdf-fallback { display: none; }
-@media (max-width: 760px) {
-  .pdf-fallback { display: block; }
-}
-
 /* --- Footer --------------------------------------------------------------- */
 
 .site-footer {
@@ -698,3 +681,70 @@ hr {
 .center { text-align: center; }
 .center p { margin-inline: auto; }
 .stack > * + * { margin-top: 1rem; }
+
+/* --- Contact line (résumé header) ----------------------------------------- */
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: 0.88rem;
+}
+.contact-row li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-muted);
+}
+.contact-row svg { width: 15px; height: 15px; flex: none; color: var(--accent); }
+.contact-row a { color: var(--text-muted); text-decoration-color: var(--border-firm); }
+.contact-row a:hover { color: var(--accent-text); }
+
+/* --- Print ---------------------------------------------------------------- */
+
+@media print {
+  /* !important, because the dark-theme blocks below :root out-specify a plain
+     :root selector here. Custom properties do honour it. */
+  :root {
+    --bg: #fff !important;
+    --bg-elev: #fff !important;
+    --surface: #fff !important;
+    --text: #111 !important;
+    --text-muted: #333 !important;
+    --text-faint: #555 !important;
+    --border: #ccc !important;
+    --border-firm: #999 !important;
+    --accent: #0f766e !important;
+    --accent-text: #0f766e !important;
+    --accent-soft: transparent !important;
+    --shadow-sm: none !important;
+    --shadow-md: none !important;
+  }
+
+  .site-header,
+  .site-footer,
+  .skip-link,
+  .no-print { display: none !important; }
+
+  body { font-size: 10pt; line-height: 1.45; }
+  .wrap { max-width: none; padding-inline: 0; }
+  .section { padding-block: 0 0.75rem; }
+  .section + .section { padding-top: 0; }
+  .section-head { margin-bottom: 0.75rem; }
+
+  h1 { font-size: 20pt; }
+  h2 { font-size: 12pt; }
+  h3 { font-size: 10.5pt; }
+  p { max-width: none; }
+
+  .timeline > li { break-inside: avoid; padding-bottom: 0.9rem; }
+  .timeline > li::before { box-shadow: none; }
+  .rows > div { break-inside: avoid; padding-block: 0.4rem; }
+  .card, .note, .stats { break-inside: avoid; box-shadow: none; }
+
+  a { text-decoration: none; color: inherit; }
+  .contact-row { margin-bottom: 1rem; }
+}
